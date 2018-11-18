@@ -9,6 +9,10 @@ categories:
 
 > 原文：[Debugging RxJS, Part 1: Tooling](https://blog.angularindepth.com/debugging-rxjs-4f0340286dd3)
 
+> 译者：[Ice Panpan](https://github.com/TanYiBing)&nbsp;&nbsp;&nbsp;&nbsp;校验者：
+
+![banner](./img/rxjs/banner.jpeg)
+
 我是一个 `Rxjs` 的信仰者，我在我所有的项目中都使用 `Rxjs`。有了 `Rxjs`，我发现很多曾经觉得乏味的事都变得痛快。但是有一件事不是这样：调试。
 
 `Rxjs` 中异步的本质在组合之后让调试变得更具挑战性：没有太多的状态（state）供你检查，并且调用堆栈（call stack）也帮不了太大的忙。我过去使用的方法是在整个代码多处添加 `do` 操作符并且记录，以此来检查那些组合的 `Observable` 产生的值。这并不是我想要的方法，因为：
